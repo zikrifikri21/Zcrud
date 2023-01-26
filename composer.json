@@ -1,20 +1,21 @@
 {
     "name": "zcrud/zcrud",
-    "description": "Z-CRUD for Laravel",
+    "type": "library",
     "require": {
-        "php": "^7.2.5",
-        "laravel/framework": "^5.0"
+        "#": "1.0"
     },
+    "require-dev": {
+        "zcrud/zcrud": "1.0.1"
+    },
+    "license": "zikrifikri21",
     "autoload": {
         "psr-4": {
-            "CRUD\\CRUDCommand\\": "src/"
+            "Zcrud\\Zcrud\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "CRUD\\CRUDCommand\\CRUDCommandPaletteServiceProvider"
-            ]
+    "authors": [
+        {
+            "name": "zikrifikri21"
         }
-    }
+    ]
 }
