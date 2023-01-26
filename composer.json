@@ -1,21 +1,20 @@
 {
     "name": "zcrud/zcrud",
-    "type": "library",
+    "description": "My Package is a package that contains a CRUD command.",
     "require": {
-        "#": "1.0"
+        "php": "^7.2",
+        "laravel/framework": "^5.7"
     },
-    "require-dev": {
-        "zcrud/zcrud": "1.0.1"
-    },
-    "license": "zikrifikri21",
     "autoload": {
         "psr-4": {
-            "Zcrud\\Zcrud\\": "src/"
+            "zcrud\\zcrud\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "zikrifikri21"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "zcrud\\zcrud\\MyPackageServiceProvider"
+            ]
         }
-    ]
+    }
 }
