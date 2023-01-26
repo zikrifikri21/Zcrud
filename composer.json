@@ -1,0 +1,20 @@
+{
+    "name": "zcrud/zcrud",
+    "description": "Z-CRUD for Laravel",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CRUD\\CRUDCommand\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CRUD\\CRUDCommand\\CRUDCommandPaletteServiceProvider"
+            ]
+        }
+    }
+}
